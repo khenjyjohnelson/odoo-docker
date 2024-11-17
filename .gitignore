@@ -158,3 +158,29 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Odoo-specific
+addons/            # Third-party addons or local modules (optional, decide per project)
+odoo.log           # Odoo logs
+*.zip              # Exported zipped modules
+
+# PostgreSQL data directory
+postgresql/        # Ensure PostgreSQL data isn't tracked
+
+# Docker-related
+*.pid              # Process ID files
+*.sock             # Socket files
+docker-compose.override.yml  # Local overrides not intended for version control
+.docker/           # Docker-related metadata
+
+# Temporary and OS-specific files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Miscellaneous
+logs/
+debug.log          # Custom debug logs
